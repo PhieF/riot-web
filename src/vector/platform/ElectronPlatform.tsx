@@ -309,6 +309,18 @@ export default class ElectronPlatform extends VectorBasePlatform {
         return this._ipcCall('getConfig');
     }
 
+    minimize(){
+        electron.send('minimize');
+    }
+
+    maximize(){
+        window.electron.send('maximize');
+    }
+
+    close(){
+        window.electron.send('close');
+    }
+
     onUpdateDownloaded = async (ev, {releaseNotes, releaseName}) => {
         dis.dispatch<CheckUpdatesPayload>({
             action: Action.CheckUpdates,

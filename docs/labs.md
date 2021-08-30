@@ -7,6 +7,11 @@ to `Settings->Labs`. This list is non-exhaustive and subject to change, chat in
 **Be warned! Labs features are not finalised, they may be fragile, they may change, they may be
 dropped. Ask in the room if you are unclear about any details here.**
 
+## Submit Abuse Report to Moderators [MSC3215](https://github.com/matrix-org/matrix-doc/pull/3215) support (`feature_report_to_moderators`)
+
+A new version of the "Report" dialog that lets users send abuse reports directly to room moderators,
+if the room supports it.
+
 ## Matrix Spaces [MSC1772](https://github.com/matrix-org/matrix-doc/pull/1772) support (`feature_spaces`)
 
 Enables showing, using, creating, and managing spaces. Create Spaces from the all new Space Panel (to left of Room List).
@@ -120,15 +125,11 @@ or feedback for this functionality at this time.
 Allows users to receive encrypted messages by creating a device that is stored
 encrypted on the server, as described in [MSC2697](https://github.com/matrix-org/matrix-doc/pull/2697).
 
-## Voice messages (`feature_voice_messages`)
-
-Offers a way to send more time-sensitive information through the power of voice. When enabled, use the microphone
-icon on the lower right to start recording your message. You will have a chance to review after you're done recording,
-and if it sounds fine then send it off for the rest of the room to hear.
-
-Voice messages are automatically downloaded to ensure they are ready for playback as soon as possible.
-
 ## Do not disturb (`feature_dnd`)
 
 Enables UI for turning on "do not disturb" mode for the current device. When DND mode is engaged, popups
 and notification noises are suppressed. Not perfect, but can help reduce noise.
+
+## Hidden read receipts (`feature_hidden_read_receipts`)
+
+Enables sending hidden read receipts as per [MSC2285](https://github.com/matrix-org/matrix-doc/pull/2285)
